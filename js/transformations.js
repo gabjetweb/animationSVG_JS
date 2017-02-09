@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tracer d'une figure SVG par l'événement scroll</title>
-	<link rel="stylesheet" type="text/css" href="less/style.css">
-</head>
 
-<body>
-
-
-
-<svg 	id="monSVG" 
-
-		width="1000" 
-
-		height="500"
-
-		viewBox="-50 -50 1000 500"
-
-		preserveAspectRatio="xMidYMid slice""
-
-		>
-
- <!--  Le path d'un triangle -->
-
-  <path d=" M 150 0
-  			L 75 200 
-  			L 225 200 
-  			Z"/>
-</svg>
-
-<script type="text/javascript">
-	
 	// on cible l'élément « path » que l'on veut animer 
 	var triangle = document.querySelectorAll("#monSVG path")[0];
 	// la longueur du chemin «path»
@@ -67,7 +35,3 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight
 	  // tracé selon la fraction de «scroll»
 	  triangle.style.strokeDashoffset = longueur - trace ;
 	}
-</script>
-
-</body>
-</html>

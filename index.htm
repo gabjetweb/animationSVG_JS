@@ -47,6 +47,26 @@
   			L 375 200 
   			L 525 200
   			Z"/>
+
+  	<path d="M 75 100 
+  			 L 75 100
+  			 L 262 100
+  			 Z" />
+
+  	<path d="M 525 100 
+  			 L 525 100
+  			 L 338 100
+  			 Z" />
+
+  	 <path d="M 150, 100
+       		  m -75, 0
+        	  a 75,75 0 1,0 150,0
+        	  a 75,75 0 1,0 -150,0" />
+
+  	 <path d="M 450, 100
+       		  m -75, 0
+        	  a 75,75 0 1,0 150,0
+        	  a 75,75 0 1,0 -150,0" />
 </svg>
 
 
@@ -54,14 +74,9 @@
 
 
 	// on cible l'élément « path » que l'on veut animer 
-	var triangle = document.querySelectorAll("#monSVG path")[0];
-	var triangle2 = document.querySelectorAll("#monSVG path")[1];
-	var triangle3 = document.querySelectorAll("#monSVG path")[2];
-	var triangle4 = document.querySelectorAll("#monSVG path")[3];
-	var triangle5 = document.querySelectorAll("#monSVG path")[4];
+	var triangles = document.querySelectorAll("#monSVG path");
 
-	var triangles = [triangle, triangle2, triangle3, triangle4, triangle5];
-	console.log(triangles);
+	console.log(triangles.length);
 
 	for (var i = triangles.length - 1; i >= 0; i--) {
 	
